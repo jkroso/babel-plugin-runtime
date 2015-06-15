@@ -1,7 +1,7 @@
 import definitions from "./definitions";
 
 export default function ({ Plugin, types: t }) {
-const RUNTIME_MODULE_NAME = "babel-runtime";
+  const RUNTIME_MODULE_NAME = "babel-runtime";
 
   return new Plugin("runtime", {
     metadata: {
