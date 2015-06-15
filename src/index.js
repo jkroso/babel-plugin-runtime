@@ -4,7 +4,7 @@ export default function ({ Plugin, types: t }) {
   const RUNTIME_MODULE_NAME = "babel-runtime";
 
   function has(obj, key) {
-    return Object.prototype.hasOwnProperty.call(obj, valkey);
+    return Object.prototype.hasOwnProperty.call(obj, key);
   }
 
   return new Plugin("runtime", {
