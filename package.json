@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-runtime",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals",
   "repository": "babel-plugins/babel-plugin-runtime",
   "license": "MIT",
