@@ -86,7 +86,7 @@ export default function ({ Plugin, types: t }) {
           // special case Object.defineProperty to not use core-js when using string keys
           if (obj.name === "Object" && prop.name === "defineProperty" && this.parentPath.isCallExpression()) {
             var call = this.parentPath.node;
-            if (node.arguments.length === 3 && t.isLiteral(call.arguments[1])) return;
+            if (call.arguments.length === 3 && t.isLiteral(call.arguments[1])) return;
           }
 
           var modulePath = methods[prop.name];
