@@ -80,7 +80,14 @@ export default function ({ Plugin, types: t }) {
           var methods = definitions.methods[obj.name];
           if (!has(methods, prop.name)) return;
 
+          // doesn't reference the global
           if (scope.getBindingIdentifier(obj.name)) return;
+
+          // special case Object.defineProperty to not use core-js when using string keys
+          if (obj.name === "Object" && prop.name === "defineProperty" && this.parentPath.isCallExpression()) {
+            var call = this.parentPath.node;
+            if (node.arguments.length === 3 && t.isLiteral(call.arguments[1])) return;
+          }
 
           var modulePath = methods[prop.name];
           return file.addImport(`${RUNTIME_MODULE_NAME}/core-js/${modulePath}`, `${obj.name}$${prop.name}`, "absoluteDefault");
