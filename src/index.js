@@ -1,7 +1,8 @@
 import definitions from "./definitions";
+import {dirname} from 'path';
 
 export default function ({ Plugin, types: t }) {
-  const RUNTIME_MODULE_NAME = require.resolve("babel-runtime")
+  const RUNTIME_MODULE_NAME = dirname(require.resolve('babel-runtime/package'));
 
   function has(obj, key) {
     return Object.prototype.hasOwnProperty.call(obj, key);
