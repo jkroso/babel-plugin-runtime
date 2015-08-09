@@ -1,7 +1,7 @@
 import definitions from "./definitions";
 
 export default function ({ Plugin, types: t }) {
-  const RUNTIME_MODULE_NAME = "babel-runtime";
+  const RUNTIME_MODULE_NAME = require.resolve("babel-runtime")
 
   function has(obj, key) {
     return Object.prototype.hasOwnProperty.call(obj, key);

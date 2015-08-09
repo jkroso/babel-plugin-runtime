@@ -5,6 +5,9 @@
   "repository": "babel-plugins/babel-plugin-runtime",
   "license": "MIT",
   "main": "lib/index.js",
+  "dependencies": {
+    "babel-runtime": "5"
+  },
   "devDependencies": {
     "babel": "^5.6.0"
   },
