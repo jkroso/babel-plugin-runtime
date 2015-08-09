@@ -8,7 +8,7 @@ export default function ({ Plugin, types: t }) {
     return Object.prototype.hasOwnProperty.call(obj, key);
   }
 
-  return new Plugin("runtime", {
+  return new Plugin("jkroso-runtime", {
     metadata: {
       group: "builtin-post-modules"
     },
