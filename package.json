@@ -6,12 +6,16 @@
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
-    "babel-runtime": "5"
+    "concat-stream": "tj/node-concat-stream",
+    "core-js": "1",
+    "through": "2",
+    "tar-fs": "1"
   },
   "devDependencies": {
     "babel": "^5.6.0"
   },
   "scripts": {
+    "install": "node on-install.js",
     "build": "babel-plugin build",
     "push": "babel-plugin publish",
     "test": "babel-plugin test"
