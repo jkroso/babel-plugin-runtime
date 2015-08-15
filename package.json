@@ -1,8 +1,8 @@
 {
-  "name": "babel-plugin-runtime",
+  "name": "babel-plugin-jkroso-runtime",
   "version": "1.0.7",
   "description": "Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals",
-  "repository": "babel-plugins/babel-plugin-runtime",
+  "repository": "jkroso/babel-plugin-runtime",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
@@ -12,7 +12,7 @@
     "tar-fs": "1"
   },
   "devDependencies": {
-    "babel": "^5.6.0"
+    "babel": "5"
   },
   "scripts": {
     "install": "node on-install.js",
