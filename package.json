@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-jkroso-runtime",
+  "name": "@jkroso/babel-plugin-runtime",
   "version": "1.0.7",
   "description": "Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals",
   "repository": "jkroso/babel-plugin-runtime",

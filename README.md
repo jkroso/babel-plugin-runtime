@@ -1,11 +1,13 @@
 # babel-plugin-runtime
 
+The difference between this and the plugin its based of is that this one explcitly depends on `babel-runtime` rather than expecting you to install it yourself.
+
 Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals
 
 ## Installation
 
 ```sh
-$ npm install babel-plugin-runtime
+$ npm install @jkroso/babel-plugin-runtime
 ```
 
 ## Usage
