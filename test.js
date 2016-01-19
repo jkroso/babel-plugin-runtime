@@ -1,10 +1,8 @@
-var babel = require('babel')
+var babel = require('babel-core')
 
-var result = babel.transform('const {a,...rest} = {a:1,b:2}', {
-  jsxPragma: "JSX",
-  plugins: [__dirname],
-  filename: 'whatever.js',
-  stage: 0,
+var result = babel.transform('const [a]=b', {
+  plugins: [__dirname, "transform-es2015-destructuring"],
+  filename: 'whatever.js'
 })
 
 console.log(result.code)

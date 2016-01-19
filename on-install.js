@@ -4,7 +4,7 @@ var tar = require('tar-fs')
 var zlib = require('zlib')
 var http = require('http')
 
-http.get('http://registry.npmjs.org/babel-runtime/6.0.14', function(res){
+http.get('http://registry.npmjs.org/babel-runtime/6.3.19', function(res){
   concat(res, function(err, json){
     if (err) throw err
     var uri = JSON.parse(json.toString()).dist.tarball
